@@ -13,7 +13,7 @@ $ yarn add @saadixl/countries
 ## How to use
 Include `countries` in your module
 ```
-const countries = require('./countries');
+const countries = require('@saadixl/countries');
 ```
 ### For getting info about one country
 You can get information about a country by passing **country code** or **country name** or **country iso code** or **capital** as string parameter. For example, if you pass **Bangladesh** as a parameter like this:
