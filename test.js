@@ -1,7 +1,7 @@
-const countriesjs = require('./countriesjs');
+const countries = require('./countriesjs');
 
 
-console.log( countriesjs({currency: "USD", continent: "Oc"}).getCountryCodes() );
+console.log( countries({currency: "USD", continent: "Oc"}).getCountryCodes() );
 // console.log( countriesjs("dhaka") );
 // console.log( countriesjs("bd") );
 // console.log( countriesjs("Bangladesh") );

@@ -13,16 +13,16 @@ $ yarn add countriesjs
 ## How to use
 Include `countriesjs` in your module
 ```
-const countriesjs = require('./countriesjs');
+const countries = require('./countriesjs');
 ```
 ### For getting info about one country
 You can get information about a country by passing **country code** or **country name** or **country iso code** or **capital** as string parameter. For example, if you pass **Bangladesh** as a parameter like this:
 ```
-countriesjs("Bangladesh")
+countries("Bangladesh")
 ```
 or you pass the country code of Bangladesh like:
 ```
-countriesjs("bd")
+countries("bd")
 ```
 
 You will get the following object as result.
@@ -40,7 +40,7 @@ You will get the following object as result.
 Which means, it doesn't matter what format data you have an what format data you need, you will get it!
 
 ### For getting a list of country
-Suppose, you need all the country codes of Europe or you need all the country names who uses USD. Firstly, you can pass a config object while calling `countriesjs`. A config object can have currency and continent for now. Once you pass a config object, now you can call some methods like:
+Suppose, you need all the country codes of Europe or you need all the country names who uses USD. Firstly, you can pass a config object while calling `countries`. A config object can have currency and continent for now. Once you pass a config object, now you can call some methods like:
 - `getAll()`
 - `getCountryCodes()`
 - `getISOCountryCodes()`
@@ -50,7 +50,7 @@ Suppose, you need all the country codes of Europe or you need all the country na
 
 Or you can call `getCapitals(property)` where `property` can be any property inside the country object. For example if we really want to find all the country names who uses USD, we call:
 ```
-countriesjs({currency: "USD"})
+countries({currency: "USD"})
 ```
 It will return the following list:
 ```
@@ -76,7 +76,7 @@ It will return the following list:
   ```
 Just to make it little more interesting, we can try to find out all the country codes of the countries who uses USD as their currency but they are part of the Ocenia continent. To do that we call:
 ```
-countriesjs({currency: "USD", continent: "Oc"}).getCountryCodes()
+countries({currency: "USD", continent: "Oc"}).getCountryCodes()
 ```
 
 I am planning to add region soon. I am developing this because I have not found everything in one place before. That's why taking things into own hands!
