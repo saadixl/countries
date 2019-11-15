@@ -1,19 +1,19 @@
-# countriesjs
+# countries
 Get countries by country name, country code, currency, continent, capital.
 
 ## How to install
 ```
-$ npm install countriesjs --save
+$ npm install countries --save
 ```
 or
 ```
-$ yarn add countriesjs
+$ yarn add countries
 ```
 
 ## How to use
-Include `countriesjs` in your module
+Include `countries` in your module
 ```
-const countries = require('./countriesjs');
+const countries = require('./countries');
 ```
 ### For getting info about one country
 You can get information about a country by passing **country code** or **country name** or **country iso code** or **capital** as string parameter. For example, if you pass **Bangladesh** as a parameter like this:
