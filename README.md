@@ -3,11 +3,11 @@ Get countries by country name, country code, currency, continent, capital.
 
 ## How to install
 ```
-$ npm install countries --save
+$ npm install @saadixl/countries --save
 ```
 or
 ```
-$ yarn add countries
+$ yarn add @saadixl/countries
 ```
 
 ## How to use
