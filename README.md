@@ -27,7 +27,8 @@ countries("bd")
 
 You will get the following object as result.
 ```
-{ capital: 'Dhaka',
+{ 
+  capital: 'Dhaka',
   continentCode: 'AS',
   continentName: 'Asia',
   countryCodeISO: 'BGD',
@@ -55,7 +56,7 @@ countries({currency: "USD"})
 It will return the following list:
 ```
 [ 
-'American Samoa',
+  'American Samoa',
   'Bonaire, Sint Eustatius and Saba',
   'Ecuador',
   'Federated States of Micronesia',
