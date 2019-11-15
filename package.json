@@ -1,0 +1,9 @@
+{
+  "name": "countriesjs",
+  "version": "0.1.5",
+  "description": "List of countries by country code, currency, region, continent.",
+  "main": "countriesjs.js",
+  "repository": "git@github.com:saadixl/countriesjs.git",
+  "author": "Saadi <saadixl@outlook.com>",
+  "license": "MIT"
+}
