@@ -5,5 +5,14 @@
   "main": "countries.js",
   "repository": "git@github.com:saadixl/countries.git",
   "author": "Saadi <saadixl@outlook.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "continent",
+    "countries",
+    "country",
+    "currency",
+    "capital",
+    "iso",
+    "phone"
+  ]
 }
