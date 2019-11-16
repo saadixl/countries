@@ -19,8 +19,9 @@ const countries = require('@saadixl/countries');
 
 **What can be passed as string parameter?**
 - Country code, example: "BD"
+- Country name, example: "bangladesh"
 - ISO Country code, example: "SGP"
-- Capital name, example: "DHAKA"
+- Capital name, example: "DhAka"
 
 *Note that the parameter is case insensitive*
 
