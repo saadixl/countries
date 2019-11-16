@@ -21,6 +21,7 @@ const countries = require('@saadixl/countries');
 - Country code, example: "BD"
 - ISO Country code, example: "SGP"
 - Capital name, example: "DHAKA"
+
 *Note that the parameter is case insensitive*
 
 You can get information about a country by passing **country code** or **country name** or **country iso code** or **capital** as string parameter. For example, if you pass **Bangladesh** as a parameter like this:
@@ -54,6 +55,7 @@ Which means, it doesn't matter what format data you have an what format data you
 **What can be passed as config?**
 - `currency` can be currency code, currency name
 - `continent` can be continent code, continent name
+
 *Note that you can pass both currency and continent together*
 
 Suppose, you need all the country codes of Europe or you need all the country names who uses USD. Firstly, you can pass a config object while calling `countries`. A config object can have currency and continent for now. Once you pass a config object, now you can call some methods like:
