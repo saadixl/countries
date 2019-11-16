@@ -97,4 +97,10 @@ Just to make it little more interesting, we can try to find out all the country 
 countries({currency: "USD", continent: "Oc"}).getCountryCodes()
 ```
 
+It will return you the following array:
+
+```
+[ 'AS', 'FM', 'GU', 'MH', 'MP', 'PW', 'TL', 'UM' ]
+```
+
 I am planning to add region soon. I am developing this because I have not found everything in one place before. That's why taking things into own hands!
