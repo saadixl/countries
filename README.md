@@ -50,13 +50,13 @@ You will get the following object as result.
 Which means, it doesn't matter what format data you have an what format data you need, you will get it!
 
 
-### For getting a list of country
+### For getting a list of countries
 
 **What can be passed as config?**
 - `currency` can be currency code, currency name
 - `continent` can be continent code, continent name
 
-*Note that you can pass both currency and continent together*
+*Note that you can pass both currency and continent together. At least one property as config is required.*
 
 Suppose, you need all the country codes of Europe or you need all the country names who uses USD. Firstly, you can pass a config object while calling `countries`. A config object can have currency and continent for now. Once you pass a config object, now you can call some methods like:
 - `getAll()`
