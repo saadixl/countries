@@ -1,6 +1,6 @@
 {
   "name": "@saadixl/countries",
-  "version": "0.1.15",
+  "version": "0.0.16",
   "description": "List of countries by country code, currency, region, continent.",
   "main": "countries.js",
   "repository": "git@github.com:saadixl/countries.git",
