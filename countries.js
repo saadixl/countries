@@ -36,7 +36,7 @@ class List {
   }
 
   getCapitals() {
-    return this.getCapitals("capital");
+    return this.getProperties("capital");
   }
 
   getProperties(propertyName) {
@@ -65,13 +65,14 @@ class Searcher {
   }
 
   getCountry(param) {
-    param = param.length > 3 ? toTitleCase(param) : param.toUpperCase();
+    const paramUpper = param.toUpperCase();
+    const paramTitle = toTitleCase(param);
     const resultedCountryCode = dataCountryCodes.filter((countryCode) => {
       const country = data[countryCode];
-      return countryCode.toUpperCase() === param ||
-             (country.names && country.names.indexOf(param) > -1) ||
-             (country.countryCodeISO === param) ||
-             (country.capital && country.capital.toUpperCase() === param);
+      return countryCode.toUpperCase() === paramUpper ||
+             (country.names && country.names.indexOf(paramTitle) > -1) ||
+             (country.countryCodeISO === paramUpper) ||
+             (country.capital && country.capital.toUpperCase() === paramUpper);
     });
     return data[resultedCountryCode];
   }
