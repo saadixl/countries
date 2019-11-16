@@ -66,13 +66,13 @@ class Searcher {
 
   getCountry(param) {
     const paramUpper = param.toUpperCase();
-    const paramTitle = toTitleCase(param);
     const resultedCountryCode = dataCountryCodes.filter((countryCode) => {
       const country = data[countryCode];
-      return countryCode.toUpperCase() === paramUpper ||
-             (country.names && country.names.indexOf(paramTitle) > -1) ||
-             (country.countryCodeISO === paramUpper) ||
-             (country.capital && country.capital.toUpperCase() === paramUpper);
+      const countryNames = convertArrayOfStringsToUpperCases(country.names);
+      return countryCode.toUpperCase() === paramUpper || // Check if matches to country code
+             (country.countryCodeISO === paramUpper) || // Check if matches to iso country code
+             (countryNames.indexOf(paramUpper) > -1) || // Check if available inside names
+             (country.capital && country.capital.toUpperCase() === paramUpper); // Check if matches to capital
     });
     return data[resultedCountryCode];
   }
@@ -131,11 +131,15 @@ function getCountryValues() {
   });
 }
 
-// Function to convert string in title case
-function toTitleCase(inp) {
-  return inp.replace(/\w\S*/g, function(str) {
-    return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();
-  });
+// It does exactly what the name says ;)
+function convertArrayOfStringsToUpperCases(arr) {
+  if(!arr || !arr.length) {
+    return [];
+  } else {
+    return arr.map((item) => {
+      return item.toUpperCase();
+    });
+  }
 }
 
 /*
