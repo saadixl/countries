@@ -1,5 +1,5 @@
 # countries
-Get countries by country name, country code, currency, continent, capital.
+node package for getting countries by country name, country code, currency, continent, capital.
 
 ## How to install
 ```
